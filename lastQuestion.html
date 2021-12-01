@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+    <script>
+        var n,i,ch,cnt=0;
+        n=prompt("Enter a String");
+        for(i=0;i<n.length;i++)
+        {
+            ch=n.charAt(i);
+            if(ch=='a' || ch==' A' || ch=='e' || ch=='E' || ch=='i' || ch=='i' || ch=='o' || ch=='O' || ch=='u' || ch=='U')
+            {
+                cnt=cnt+1;
+            }
+        }
+        document.write("Number of vowels in string are"+cnt);
+    </script>
+</html>

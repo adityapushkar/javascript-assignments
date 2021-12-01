@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id="container">&nbsp</div>
+    </body>
+    <script>
+       var i = 0;
+        function change() {
+            var doc = document.getElementById("container");
+            var color = ["black", "blue", "brown", "green"];
+            doc.style.backgroundColor = color[i];
+            i = (i + 1) % color.length;
+        }
+        setInterval(change, 4000);
+    </script>
+</html>
